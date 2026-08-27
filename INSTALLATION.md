@@ -7,7 +7,7 @@ Install `knowledge-capture` as a plugin when your agent supports plugins. Use th
 Clone this repository and install the local plugin marketplace:
 
 ```bash
-git clone https://github.com/kricha/knowledge-capture.git
+git clone https://github.com/0k-lab/knowledge-capture.git
 cd knowledge-capture
 codex plugin marketplace add "$PWD"
 codex plugin add knowledge-capture@knowledge-capture
@@ -20,7 +20,7 @@ Start a new Codex thread after installing so the skill is loaded into the sessio
 Add this repository as a plugin marketplace and install the plugin:
 
 ```text
-/plugin marketplace add kricha/knowledge-capture
+/plugin marketplace add 0k-lab/knowledge-capture
 /plugin install knowledge-capture@knowledge-capture
 ```
 
@@ -38,19 +38,19 @@ Run `/reload-plugins` or start a new Claude Code session after installing.
 For OpenCode, Hermes, and other agents that load `SKILL.md` packages directly, install from the skill directory URL, not the repository root:
 
 ```text
-https://github.com/kricha/knowledge-capture/tree/main/skills/knowledge-capture
+https://github.com/0k-lab/knowledge-capture/tree/main/skills/knowledge-capture
 ```
 
 Ask your agent:
 
 ```text
-Install the knowledge-capture Agent Skill from https://github.com/kricha/knowledge-capture/tree/main/skills/knowledge-capture into this repo as .agents/skills/knowledge-capture.
+Install the knowledge-capture Agent Skill from https://github.com/0k-lab/knowledge-capture/tree/main/skills/knowledge-capture into this repo as .agents/skills/knowledge-capture.
 ```
 
 For Codex direct skill installation:
 
 ```text
-$skill-installer install https://github.com/kricha/knowledge-capture/tree/main/skills/knowledge-capture
+$skill-installer install https://github.com/0k-lab/knowledge-capture/tree/main/skills/knowledge-capture
 ```
 
 Then add a repo instruction such as:
@@ -75,21 +75,21 @@ Expected install paths:
 Some agents and skill collections use the community `skills` CLI as a one-line installer. For this single-skill repo, these are the equivalent forms to try:
 
 ```bash
-npx skills add kricha/knowledge-capture -s knowledge-capture
-npx skills add kricha/knowledge-capture -s knowledge-capture --global
-npx skills add kricha/knowledge-capture -s knowledge-capture -a claude-code
+npx skills add 0k-lab/knowledge-capture -s knowledge-capture
+npx skills add 0k-lab/knowledge-capture -s knowledge-capture --global
+npx skills add 0k-lab/knowledge-capture -s knowledge-capture -a claude-code
 ```
 
 If your installer accepts a full skill directory URL, use:
 
 ```text
-https://github.com/kricha/knowledge-capture/tree/main/skills/knowledge-capture
+https://github.com/0k-lab/knowledge-capture/tree/main/skills/knowledge-capture
 ```
 
 Manual clone/link installs must point at the skill folder, not the repository root:
 
 ```bash
-git clone https://github.com/kricha/knowledge-capture.git
+git clone https://github.com/0k-lab/knowledge-capture.git
 cd knowledge-capture
 mkdir -p ~/.cursor/skills
 ln -s "$(pwd)/skills/knowledge-capture" ~/.cursor/skills/knowledge-capture
@@ -98,7 +98,7 @@ ln -s "$(pwd)/skills/knowledge-capture" ~/.cursor/skills/knowledge-capture
 For a Claude Code plugin checkout, link the repository root because the plugin manifests live at the root:
 
 ```bash
-git clone https://github.com/kricha/knowledge-capture.git
+git clone https://github.com/0k-lab/knowledge-capture.git
 cd knowledge-capture
 mkdir -p ~/.claude/plugins
 ln -s "$(pwd)" ~/.claude/plugins/knowledge-capture

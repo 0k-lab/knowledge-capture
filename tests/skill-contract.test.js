@@ -45,8 +45,8 @@ const CANONICAL_AUTHOR = {
   name: "kRicha",
   url: "https://github.com/kricha",
 };
-const CANONICAL_HOMEPAGE = "https://github.com/kricha/knowledge-capture";
-const CANONICAL_REPOSITORY = "https://github.com/kricha/knowledge-capture";
+const CANONICAL_HOMEPAGE = "https://github.com/0k-lab/knowledge-capture";
+const CANONICAL_REPOSITORY = "https://github.com/0k-lab/knowledge-capture";
 const CANONICAL_LICENSE = "MIT";
 const CANONICAL_SKILLS_PATH = "./skills/";
 const CANONICAL_MARKETPLACE_SOURCE = "./";
@@ -312,7 +312,7 @@ test("README is human-facing and makes installation attractive", () => {
   assert.ok(readme.includes("## Install"));
   assert.ok(readme.includes("Fastest path:"));
   assert.ok(
-    readme.includes("npx skills add kricha/knowledge-capture -s knowledge-capture"),
+    readme.includes("npx skills add 0k-lab/knowledge-capture -s knowledge-capture"),
   );
   assert.ok(
     readme.includes("This uses the community Skills CLI for a one-command install."),
@@ -322,7 +322,7 @@ test("README is human-facing and makes installation attractive", () => {
       "For Codex plugin, Claude Code, OpenCode, direct skill installs, and checkout-based installs into another repo, see [INSTALLATION.md](INSTALLATION.md).",
     ),
   );
-  assert.ok(!readme.includes("git clone https://github.com/kricha/knowledge-capture.git"));
+  assert.ok(!readme.includes("git clone https://github.com/0k-lab/knowledge-capture.git"));
   assert.ok(!readme.includes("codex plugin marketplace add"));
   assert.ok(!readme.includes("codex plugin add knowledge-capture@knowledge-capture"));
   assert.ok(!readme.includes("### Claude Code Plugin"));
@@ -402,7 +402,7 @@ test("installation guide documents all supported install paths", () => {
   assert.ok(installation.startsWith("# Installation"));
   assert.ok(installation.includes("## Codex Plugin From A Clone"));
   assert.ok(
-    installation.includes("git clone https://github.com/kricha/knowledge-capture.git"),
+    installation.includes("git clone https://github.com/0k-lab/knowledge-capture.git"),
   );
   assert.ok(installation.includes("codex plugin marketplace add \"$PWD\""));
   assert.ok(
@@ -410,7 +410,7 @@ test("installation guide documents all supported install paths", () => {
   );
   assert.ok(installation.includes("## Claude Code Plugin"));
   assert.ok(
-    installation.includes("/plugin marketplace add kricha/knowledge-capture"),
+    installation.includes("/plugin marketplace add 0k-lab/knowledge-capture"),
   );
   assert.ok(
     installation.includes("/plugin install knowledge-capture@knowledge-capture"),
@@ -423,7 +423,7 @@ test("installation guide documents all supported install paths", () => {
   assert.ok(installation.includes("For OpenCode, Hermes, and other agents"));
   assert.ok(
     installation.includes(
-      "https://github.com/kricha/knowledge-capture/tree/main/skills/knowledge-capture",
+      "https://github.com/0k-lab/knowledge-capture/tree/main/skills/knowledge-capture",
     ),
   );
   assert.ok(installation.includes("Install the knowledge-capture Agent Skill from"));
@@ -444,17 +444,17 @@ test("installation guide documents all supported install paths", () => {
   assert.ok(installation.includes("## Skills CLI And Manual Links"));
   assert.ok(
     installation.includes(
-      "npx skills add kricha/knowledge-capture -s knowledge-capture",
+      "npx skills add 0k-lab/knowledge-capture -s knowledge-capture",
     ),
   );
   assert.ok(
     installation.includes(
-      "npx skills add kricha/knowledge-capture -s knowledge-capture --global",
+      "npx skills add 0k-lab/knowledge-capture -s knowledge-capture --global",
     ),
   );
   assert.ok(
     installation.includes(
-      "npx skills add kricha/knowledge-capture -s knowledge-capture -a claude-code",
+      "npx skills add 0k-lab/knowledge-capture -s knowledge-capture -a claude-code",
     ),
   );
   assert.ok(

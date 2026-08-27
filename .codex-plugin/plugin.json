@@ -6,8 +6,8 @@
     "name": "kRicha",
     "url": "https://github.com/kricha"
   },
-  "homepage": "https://github.com/kricha/knowledge-capture",
-  "repository": "https://github.com/kricha/knowledge-capture",
+  "homepage": "https://github.com/0k-lab/knowledge-capture",
+  "repository": "https://github.com/0k-lab/knowledge-capture",
   "license": "MIT",
   "keywords": [
     "agent-skill",
@@ -26,7 +26,7 @@
     "capabilities": [
       "Write"
     ],
-    "websiteURL": "https://github.com/kricha/knowledge-capture",
+    "websiteURL": "https://github.com/0k-lab/knowledge-capture",
     "defaultPrompt": [
       "Capture the current coding session.",
       "Save decisions and next steps.",

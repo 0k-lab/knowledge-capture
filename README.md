@@ -33,7 +33,7 @@ This project is deliberately small. It does not sync, index, publish, promote du
 Fastest path:
 
 ```bash
-npx skills add kricha/knowledge-capture -s knowledge-capture
+npx skills add 0k-lab/knowledge-capture -s knowledge-capture
 ```
 
 This uses the community Skills CLI for a one-command install.
